@@ -1,6 +1,6 @@
 ## site.pp ##
 
-# This file (./manifests/site.pp) is the main entry point
+# This file (./manifests/site.pp) is the main entry point for my experiment with r10k, open source puppet and control-repo
 # used when an agent connects to a master and asks for an updated configuration.
 # https://puppet.com/docs/puppet/latest/dirs_manifest.html
 #
