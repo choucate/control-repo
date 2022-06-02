@@ -32,7 +32,6 @@ node default {
  package { 'traceroute':
   ensure => 'installed', 
    }
-
 # Install drbd
  package { 'drbd':
   ensure => 'installed', 
@@ -45,12 +44,10 @@ node default {
  package { 'pcs':
   ensure => 'installed', 
    }
-
 # Install pacemaker
  package { 'pacemaker':
   ensure => 'installed', 
    }
-
 # Install corosync
  package { 'fence-agents-all':
   ensure => 'installed', 
