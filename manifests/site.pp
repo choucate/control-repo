@@ -34,4 +34,5 @@ class epel {
       ensure => present,
   }
 }
+}
 
