@@ -30,6 +30,6 @@ node default {
   #   class { 'my_class': }
 }
 # Install epel
-class { 'epel':
+class { 'puppet-epel':
 
 }
