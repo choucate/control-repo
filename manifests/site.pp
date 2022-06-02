@@ -32,6 +32,9 @@ node default {
  package { 'traceroute':
   ensure => 'installed', 
    }
+
+ require ::epel
+
  # Install drbd
  package { 'drbd':
   ensure => 'installed', 
