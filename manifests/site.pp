@@ -40,11 +40,11 @@ node default {
   ensure => 'installed', 
    }
 # Install pacemaker
- package { 'pacemaker':
+ package { 'pcs':
   ensure => 'installed', 
    }
   # Install corosync
- package { 'corosync':
+ package { 'fence-agents-all':
   ensure => 'installed', 
    }
   }
