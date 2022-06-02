@@ -29,10 +29,9 @@ node default {
   # Example:
   #   class { 'my_class': }
   # Install epel
-class epel_repo { 
-   package { 'puppet-epel':
-            enabled => 1,
-    }
+class { 'puppet-epel':
+  enabled => 1,
+      }
   }
-}
+
 
