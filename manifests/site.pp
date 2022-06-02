@@ -31,11 +31,19 @@ node default {
   # Install traceroute
  package { 'traceroute':
   ensure => 'installed', 
-  }
+   }
  # Install drbd
  package { 'drbd':
   ensure => 'installed', 
+   }
+# Install pacemaker
+ package { 'pacemaker':
+  ensure => 'installed', 
+   }
+  # Install corosync
+ package { 'corosync':
+  ensure => 'installed', 
+   }
   }
-}
 
 
