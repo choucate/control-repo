@@ -29,10 +29,10 @@ node default {
   # Example:
   #   class { 'my_class': }
   # Install epel
-class epel { 
-  package { 'puppet-epel':
-      ensure => present,
+        class epel { 
+           package { 'puppet-epel':
+            ensure => present,
+    }
   }
-}
 }
 
