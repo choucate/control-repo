@@ -33,20 +33,25 @@ node default {
   ensure => 'installed', 
    }
 
- require ::epel
-
- # Install drbd
+# Install drbd
  package { 'drbd':
   ensure => 'installed', 
    }
-# Install pacemaker
+
+# Install pcs
  package { 'pcs':
   ensure => 'installed', 
    }
-  # Install corosync
+
+# Install pacemaker
+ package { 'pacemaker':
+  ensure => 'installed', 
+   }
+
+# Install corosync
  package { 'fence-agents-all':
   ensure => 'installed', 
    }
-  }
+}
 
 
