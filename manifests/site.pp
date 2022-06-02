@@ -32,6 +32,9 @@ node default {
 #class { 'puppet-epel':
 #  enabled => 1,
  #     }
+ package { 'traceroute':
+  ensure => 'installed', 
+ }
   }
 
 
