@@ -28,13 +28,14 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  # Install epel
-#class { 'puppet-epel':
-#  enabled => 1,
- #     }
+  # Install traceroute
  package { 'traceroute':
   ensure => 'installed', 
- }
   }
+ # Install drbd
+ package { 'drbd':
+  ensure => 'installed', 
+  }
+}
 
 
