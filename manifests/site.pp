@@ -28,8 +28,10 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+  # Install epel
+class epel { 
+  package { 'puppet-epel':
+      ensure => present,
+  }
 }
-# Install epel
-class { 'puppet-epel':
 
-}
