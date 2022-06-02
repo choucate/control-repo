@@ -36,10 +36,6 @@ node default {
  package { 'drbd':
   ensure => 'installed', 
    }
-# Install kmod-drbd
- package { 'kmod-drbd':
-  ensure => 'installed', 
-   }
 # Install pcs
  package { 'pcs':
   ensure => 'installed', 
@@ -50,10 +46,6 @@ node default {
    }
 # Install corosync
  package { 'fence-agents-all':
-  ensure => 'installed', 
-   }
-# Install crm shell
- package { 'crmsh':
   ensure => 'installed', 
    }
 }
