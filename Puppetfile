@@ -17,3 +17,5 @@ mod 'puppetlabs/concat',  '7.2.0'
 #  branch: 'docs_experiment'
 #mod 'puppet-epel'
 mod 'puppet-epel', '4.1.0'
+mod 'rockyhosts',
+    :git => 'git@github.com:choucate/rockyhosts.git'

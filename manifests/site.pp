@@ -49,5 +49,19 @@ node default {
   ensure => 'installed', 
    }
 }
+# New class for hosts file config
+
+node 'rocky.linux.com', {
+   ->class { 'rockyhosts':
+   }
+}
+node 'node1.linux.com', {
+   ->class { 'rockyhosts':
+   }
+}
+node 'node2.linux.com', {
+   ->class { 'rockyhosts':
+   }
+}
 
 
